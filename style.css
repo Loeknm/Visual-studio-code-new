@@ -80,7 +80,7 @@ header nav img{
 }
 .homepage {
     display: flex;
-    gap: 3em;
+    gap: 2em;
 }
 .box1 {
     display: flex;
