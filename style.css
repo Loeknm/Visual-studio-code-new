@@ -3,9 +3,23 @@
     margin:0;
     list-style: none;
 }  
+/* Jeffery vond dit hier boven blijkbaar handig. */
 
-img{
-    width: 100%;
+.sources{
+    padding-right: 3vw;
+    text-decoration: none;
+}
+.sources ul a{
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+
+
+section img{
+    width: 45vw;
+    height: 31vw; 
+    padding-top: 3em;
 }
 
 
@@ -22,6 +36,7 @@ section {
 } 
 article {
     padding: 3em 12vw 2.5em;
+    display: flex;
 }
 
 
@@ -35,72 +50,32 @@ h2 {
     padding-bottom: 2%;
 }
 
-h3{
-    font-size: 2em;
-    padding-bottom: 2%;
-}
-h4 { 
-    font-size: 2em;
-    padding-bottom: 2%;
-}
-h5 {
-    font-size: 2em;
-    padding-bottom: 2%;
-    padding-top: 2em;
-}
 
-h1, h2 ,h3 ,h4 ,h5{
+h1, h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
-.Specifications {
-    font-size: 1.25em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 p {width: 40vw;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 1.2vw;}
- 
+
+
+
+
+/* header css begins here */ 
 header {
-    width: 100vw ;
+    width: 97vw ;
     height: auto;
     background-color: azure;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 1em;
-    padding-left: 2em;
+    padding-left: 2vw;
     border-radius: 1em;
 }
 header nav img{
     width: 10vw;
-}
-.homepage img {
-    width: 62em;
-}
-.homepage {
-    display: flex;
-    gap: 2em;
-}
-.box1 {
-    display: flex;
-    margin: 2em;
-    padding-top: 3em;
-}
-.box1 img{
-    max-width: 48vw;
-    height: 34vw;
-    min-width: 50%;
-}
-.box2 {
-    margin: 2em;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3em;
-}
-.box2 p {
-    width: 20vw;
-    font-size: 1.6;
 }
 
 header nav { 
@@ -126,53 +101,54 @@ header nav li a:hover {
 header nav li a:active {
     opacity: 0.5;
 }
+/* header css ends here */
 
-tr th td {
-    font-size: 1.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid white;
-    width: 50vw;
-    padding: 2vw;
-    margin: 0px;          
+
+
+/* .box1 and .box2 are used on page index.html to create different flexboxes. */
+.box1 {
+    display: flex;
+    margin: 2em;
+    padding-top: 3em;
+}
+.box1 img{
+    max-width: 48vw;
+    height: 34vw;
+    min-width: 50%;
+}
+.box2 {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+.box2 p {
+    width: 20vw;
+    font-size: 1.6;
 }
 
-.spectable {
-    font-size: 1.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid white;
-    width: 45%;
-    padding: 15px;
-    margin: 0px;
-}
-.textlink {
+
+/* the <p> <a> (hover, active) below are used to style links in text. */
+p a{
     text-decoration: none;
     transition: all .2s ease;
     border-bottom: 2px solid rgb(253, 22, 22);
     
 }
-.textlink:hover {
+p a:hover{
     background-color: red; 
     transition: 0.3s;
     opacity: 0.9;
 }
-.textlink:active {
+p a:active {
     opacity: 0.5;
 }
 a {color: rgb(255, 255, 255);}
 
-.sectionpage2 {
-    display:flex;
-    padding-top: 5%;
-    padding-left: 5%;
-    gap: 3em
-    ;
-}
 
-.sectionpage2 img {
-    width: 60em;
-}
 
-#linkbutton1 {
+/* specific ccs of "learn more" link on page index.html begins here.  */
+.linkbutton1 {
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
@@ -187,26 +163,30 @@ a {color: rgb(255, 255, 255);}
         color 0.3s;
     margin-top: 2em;
 }
-#linkbutton1:hover{
+.linkbutton1:hover{
     background-color: rgb(3, 45, 100);
     color: rgb(255, 255, 255);
 }
-#linkbutton1:active {
+.linkbutton1:active {
     opacity: 0.5;
 }
-#linkbutton1 {
+.linkbutton1 {
     text-decoration: none;
 }
+/* specific ccs of "learn more" link on page index.html ends here.  */
 
-.firebox {
-    width: 45vw;
-    height: 31vw; 
-    padding-top: 3em;
-}
+
+
 figcaption {
     padding-bottom: 3%;
     font-style: italic;
 }
+
+
+
+
+/* footer css begins here */
+
 footer {
     width: 100%;
     height: 10%;
@@ -218,9 +198,6 @@ footer {
     
 
 }
-
-   
-
 
 .column {
     display: flex;
@@ -245,19 +222,17 @@ footer {
     height: auto;
 }
 
-.footer_list, li {
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-figure {
-    margin-left: 0.1%
-}
 footer nav img {
     width: 20em;
     display: flex;
     flex-direction: column;
+    padding-left: 2em;
 }
+
+/* footer css ends here */
+
+
+/* .page3box1 & .page3box2 are used to make a flexbox on page3.html*/
 .page3box1{
     display: flex;
     gap: 3em;
@@ -281,19 +256,38 @@ footer nav img {
     padding-top: 3em;
     padding-right: 2em;
 }
-/* hieronder worden afbeelding(en) individueel geschaald met ID omdat ze bijvoorbeeld erg groot zijn of een rare pixel ratio hebben. */
 
-#firebox1{
-    width: 46vw;
-    height: 28vw;
-    padding-top: 3em
+
+.page4box1 {
+    display: flex;
 }
-#gif{
-    width: 10em;
+.page4box1 img figcaption{
     display: flex;
 }
 
-.table2 {
+.page4box1 img {
+    width: 30vw;
+    height: 19vw;
+    padding-top: 3em;
+    padding-right: 2em;
+}
+
+/* firebox1 and firebox2 are used to resize specific images : nb2.jpg on page2 and mazda_nd1.jpg */
+
+.firebox1{
+    width: 48vw;
+    height: 28vw;
+    padding-top: 3em
+}
+.firebox2{
+    width: 54vw;
+    height: 27vw;
+}
+
+
+/* css used to style table begins here */
+
+table{
     margin: 3vw 0;
     font-size: 1.5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -301,10 +295,11 @@ footer nav img {
     
 }
 
-.table2 th,
-.table2 td {
+table th,
+table td {
     padding: 0.6em 1em;
 }
+/* css used to style table ends here */
 
 
 
